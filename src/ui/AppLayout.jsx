@@ -6,8 +6,8 @@ import { IoMdMailUnread } from "react-icons/io";
 
 function AppLayout() {
   return (
-    <div className="font-code relative h-screen">
-      <div className="absolute bg-sub/10 top-[20%] sm:top-[40%] rounded-r-md shadow-sm p-2">
+    <div className="font-code">
+      <div className="fixed bg-sub/10 top-[30%] sm:top-[40%] rounded-r-md shadow-sm p-2">
         <FixedItem>
           <FaGithub />
         </FixedItem>

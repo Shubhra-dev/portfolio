@@ -16,7 +16,7 @@ function Header() {
         </div>
         <div className="hidden lg:w-4/6 lg:flex lg:items-center lg:justify-end">
           <NavItem title={"About Me"} />
-          <NavItem title={"Experience"} />
+          <NavItem title={"Projects"} />
           <NavItem title={"Contact"} />
         </div>
         <div className="w-2/6 relative lg:hidden">
@@ -31,7 +31,7 @@ function Header() {
                 onClick={() => setMenuOpen(!menuOpen)}
               />
               <NavItem
-                title={"Experience"}
+                title={"Projects"}
                 onClick={() => setMenuOpen(!menuOpen)}
               />
               <NavItem
@@ -41,7 +41,7 @@ function Header() {
             </div>
           )}
         </div>
-        <div className="w-1/6 flex items-center justify-end text-2xl">
+        <div className="w-1/6 lg:w-2/6 flex items-center justify-end text-2xl">
           <IoIosSunny className="text-prime" />
           <MdDarkMode className="text-dark" />
         </div>
