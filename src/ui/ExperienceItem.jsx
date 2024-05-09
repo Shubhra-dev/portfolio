@@ -2,7 +2,7 @@ import { IoLink } from "react-icons/io5";
 
 function ExperienceItem({ duration, name, role }) {
   return (
-    <div className="flex gap-2 sm:gap-4 pb-4">
+    <div className="flex gap-2 pb-4">
       <div className="basis-[30%]">
         <h2 className="text-base font-medium bg-sub/10 h-max px-1 rounded-md sm:w-max">
           {duration}
