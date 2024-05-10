@@ -32,7 +32,7 @@ const project = [
     image: pres,
     title: "Agri Prescription",
     description:
-      "Prescription writing tool for agriculture specialist with huge database of agri medicines.",
+      "Prescription writing tool for agriculture specialist with huge database of agri medicines in bengali language.",
   },
   {
     id: "4",
@@ -40,15 +40,16 @@ const project = [
     image: logo,
     title: "Zakat Foundation",
     description:
-      "Fully functional grocery e-commerce as an online grocery service provider",
+      "Zakat Foundation helps Muslims in need by giving them food, clothing, a roof over their heads, skills for work, and education.",
   },
   {
     id: "5",
     bgImg: aksoft,
     image: ak,
     title: "Ak Software",
+    link: "https://aksoftware.com.bd",
     description:
-      " Peer to Peer Lending platform in Bangladesh to bring borrowers and investors together",
+      "AK SOFTWARE is working with Tally Software in Bangladesh from 15 years, with having various categories of satisfied client around in Bangladesh.",
   },
 ];
 function Projects() {
@@ -58,7 +59,7 @@ function Projects() {
         Projects
       </h1>
       <div className="w-max m-auto py-[3px] px-5 bg-sub rounded-md"></div>
-      <div className="py-8 flex justify-around items-center gap-8 flex-wrap">
+      <div className="py-8 flex justify-center items-center gap-8 flex-wrap">
         {project.map((item, index) => (
           <ProjectItem item={item} key={index} />
         ))}

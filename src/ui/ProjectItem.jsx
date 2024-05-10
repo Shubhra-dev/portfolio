@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function ProjectItem({ item }) {
   const [flip, setFlip] = useState("");
-  const { id, image, title, description, bgImg } = item;
+  const { id, image, title, link, description, bgImg } = item;
   return (
     <div
       className="h-[350px] w-[90%] sm:w-[45%] lg:w-1/3 rounded-md bg-cover"
@@ -22,7 +22,10 @@ function ProjectItem({ item }) {
               <p className="py-4 text-prime text-lg font-medium font-mono">
                 {description}
               </p>
-              <button className="py-2 px-5 border border-prime rounded-md capitalize text-md font-semibold text-prime hover:bg-prime hover:text-sub">
+              <button
+                onClick={() => window.open(link, "_blank")}
+                className="py-2 px-5 border border-prime rounded-md capitalize text-md font-semibold text-prime hover:bg-prime hover:text-sub"
+              >
                 visit project
               </button>
             </div>

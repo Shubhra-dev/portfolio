@@ -4,6 +4,7 @@ import { IoIosSunny } from "react-icons/io";
 import { MdDarkMode } from "react-icons/md";
 import { TiThMenu } from "react-icons/ti";
 import { useState } from "react";
+import scrollToTargetDiv from "../targetDiv";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,9 +16,18 @@ function Header() {
           <h2>SHUBHRA.DEV</h2>
         </div>
         <div className="hidden lg:w-4/6 lg:flex lg:items-center lg:justify-end">
-          <NavItem title={"About Me"} />
-          <NavItem title={"Projects"} />
-          <NavItem title={"Contact"} />
+          <NavItem
+            title={"About Me"}
+            onClick={() => scrollToTargetDiv("about")}
+          />
+          <NavItem
+            title={"Projects"}
+            onClick={() => scrollToTargetDiv("projects")}
+          />
+          <NavItem
+            title={"Contact"}
+            onClick={() => scrollToTargetDiv("contact")}
+          />
         </div>
         <div className="w-2/6 relative lg:hidden">
           <TiThMenu
