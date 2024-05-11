@@ -3,6 +3,7 @@ import Header from "./Header";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import FixedItem from "./FixedItem";
 import { IoMdMailUnread } from "react-icons/io";
+import Footer from "./Footer";
 
 function AppLayout() {
   return (
@@ -17,13 +18,17 @@ function AppLayout() {
         <FixedItem link={"https://www.facebook.com/shuuvro.dev/"}>
           <FaFacebook />
         </FixedItem>
-        <FixedItem link={"mailto::shuuvro.dev@gmail.com"}>
+        <FixedItem
+          link={
+            "https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ashuuvro.dev%40gmail.com%3Fsubject%3DSUBJECT"
+          }
+        >
           <IoMdMailUnread />
         </FixedItem>
       </div>
       <Header />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
