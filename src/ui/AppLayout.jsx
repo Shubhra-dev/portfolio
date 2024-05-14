@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 function AppLayout() {
   const darkTheme = useSelector((state) => state.theme.darkTheme);
   return (
-    <div className={`font-code ${darkTheme ? "bg-dark" : ""}`}>
+    <div className={`font-code relative ${darkTheme ? "bg-dark" : ""}`}>
       <div
         className={`fixed ${
           darkTheme ? "bg-prime/20" : "bg-sub/10"
@@ -37,6 +37,7 @@ function AppLayout() {
         </FixedItem>
       </div>
       <Header />
+      <div className="h-[88px] w-full"></div>
       <Outlet />
       <Footer />
     </div>

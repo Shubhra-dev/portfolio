@@ -14,9 +14,11 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div
-      className={`h-[88px] ${darkTheme ? "text-prime border-b" : ""} shadow-md`}
+      className={`fixed z-20 w-full h-[88px] ${
+        darkTheme ? "text-prime border-b bg-dark" : "bg-prime"
+      } shadow-md`}
     >
-      <div className="w-11/12 h-full m-auto flex items-center">
+      <div className="w-full lg:w-11/12 h-full m-auto flex items-center justify-between px-2">
         <div className="w-3/6 md:w-2/6 text-lg lg:text-3xl font-bold text-sub cursor-pointer flex items-center gap-2">
           <FaCode />
           <h2>SHUBHRA.DEV</h2>
@@ -41,7 +43,11 @@ function Header() {
             onClick={() => setMenuOpen(!menuOpen)}
           />
           {menuOpen && (
-            <div className="absolute w-full bg-prime rounded-lg py-2">
+            <div
+              className={`${
+                darkTheme ? "bg-sub" : ""
+              } absolute w-full bg-prime rounded-lg py-2 border border-gray-200`}
+            >
               <NavItem
                 title={"About Me"}
                 onClick={() => setMenuOpen(!menuOpen)}
