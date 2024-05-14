@@ -1,8 +1,13 @@
+import { useSelector } from "react-redux";
 import ExperienceItem from "./ExperienceItem";
 import SkillItem from "./SkillItem";
 function About() {
+  const darkTheme = useSelector((state) => state.theme.darkTheme);
   return (
-    <div id="about" className="w-5/6 m-auto py-6">
+    <div
+      id="about"
+      className={`w-5/6 m-auto py-6 ${darkTheme ? "text-prime" : ""}`}
+    >
       <h1 className="text-center uppercase text-[40px] font-black pb-2">
         about me
       </h1>
@@ -25,16 +30,19 @@ function About() {
             duration={"Aug '23 - Present"}
             name={"OSCORP IT"}
             role={"Frontend Developer"}
+            dark={darkTheme}
           />
           <ExperienceItem
             duration={"Feb '22 - Feb '23"}
             name={"ShortStay Solutions"}
             role={"Web & Shiny Developer"}
+            dark={darkTheme}
           />
           <ExperienceItem
             duration={"Feb '18 - Present"}
             name={"AK Software"}
             role={"Web Designer & Developer (Freelance)"}
+            dark={darkTheme}
           />
         </div>
         <div className="basis-[50%] px-4">
@@ -42,16 +50,16 @@ function About() {
             My Skills
           </h2>
           <div className="flex gap-4 flex-wrap justify-center sm:justify-normal pb-4">
-            <SkillItem text={"ReactJs"} />
-            <SkillItem text={"Redux"} />
-            <SkillItem text={"Tailwind CSS"} />
-            <SkillItem text={"JavaScript"} />
-            <SkillItem text={"WordPress Design"} />
-            <SkillItem text={"Elementor"} />
-            <SkillItem text={"HTML5"} />
-            <SkillItem text={"CSS3"} />
-            <SkillItem text={"Python"} />
-            <SkillItem text={"C Programming"} />
+            <SkillItem dark={darkTheme} text={"ReactJs"} />
+            <SkillItem dark={darkTheme} text={"Redux"} />
+            <SkillItem dark={darkTheme} text={"Tailwind CSS"} />
+            <SkillItem dark={darkTheme} text={"JavaScript"} />
+            <SkillItem dark={darkTheme} text={"WordPress Design"} />
+            <SkillItem dark={darkTheme} text={"Elementor"} />
+            <SkillItem dark={darkTheme} text={"HTML5"} />
+            <SkillItem dark={darkTheme} text={"CSS3"} />
+            <SkillItem dark={darkTheme} text={"Python"} />
+            <SkillItem dark={darkTheme} text={"C Programming"} />
           </div>
         </div>
       </div>
