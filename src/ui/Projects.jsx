@@ -9,6 +9,7 @@ import logo from "../assets/logo.png";
 import ak from "../assets/ak.png";
 import aksoft from "../assets/aksoft.jpg";
 import ProjectItem from "./ProjectItem";
+import { useSelector } from "react-redux";
 const project = [
   {
     id: "1",
@@ -53,9 +54,14 @@ const project = [
   },
 ];
 function Projects() {
+  const darkTheme = useSelector((state) => state.theme.darkTheme);
   return (
     <div className="w-5/6 m-auto py-6" id="projects">
-      <h1 className="text-center uppercase text-[40px] font-black pb-2">
+      <h1
+        className={`text-center uppercase text-[40px] font-black pb-2 ${
+          darkTheme ? "text-prime" : ""
+        }`}
+      >
         Projects
       </h1>
       <div className="w-max m-auto py-[3px] px-5 bg-sub rounded-md"></div>

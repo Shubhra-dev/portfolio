@@ -17,3 +17,18 @@
 .animate-fade {
   animation: fade ease-in 1s;
 }
+
+.gradient-text {
+  background: linear-gradient(
+    to left,
+    #7843e9,
+    #64baa9,
+    #408da7,
+    #64baa9,
+    #7843e9,
+    #64baa9,
+    #408da7
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}

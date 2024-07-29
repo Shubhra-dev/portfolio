@@ -16,7 +16,7 @@ function Hero() {
           <GoDotFill className=" text-green-600" />
           <h4 className="font-semibold">online</h4>
         </div>
-        <h2 className="text-2xl sm:text-[32px] laptop:text-5xl font-black py-6">
+        <h2 className="text-transparent text-2xl sm:text-[32px] laptop:text-5xl font-black py-6 gradient-text animate-grad">
           Myself Shubhradev Chakrabarty
         </h2>
         <h5 className="text-lg sm:text-xl font-medium pb-6">

@@ -38,6 +38,7 @@ function AppLayout() {
       </div>
       <Header />
       <div className="h-[88px] w-full"></div>
+
       <Outlet />
       <Footer />
     </div>

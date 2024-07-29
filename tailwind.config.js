@@ -9,10 +9,21 @@ export default {
       colors: {
         prime: "#FFFFFF",
         sub: "#7843E9",
-        dark: "#070F2B",
+        sub2: "#64BAA9",
+        sub3: "#408DA7",
+        dark: "#021526",
       },
       screens: {
         laptop: "1300px",
+      },
+      keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
+        },
+      },
+      animation: {
+        grad: "gradient 4s linear infinite",
       },
     },
   },
